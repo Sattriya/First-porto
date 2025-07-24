@@ -7,7 +7,7 @@ body {
 
 
 .navbar {
-  background-color: #6c5ce7 !important;
+  background-color: #6c5ce7;
 }
 
 .jumbotron {
@@ -34,8 +34,8 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-15px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
@@ -44,7 +44,6 @@ h2 {
 }
 
 .card-body {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

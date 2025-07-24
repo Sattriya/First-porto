@@ -46,13 +46,12 @@
         src="img/projects/me.jpg"
         alt="Satriya"
         width="185"
-        class="rounded-circle img-thumbnail"
+        class="rounded-circle img-thumbnail-border-color"
       />
       <h1 class="display-5 fw-bold">Satriya Bumi Harja P</h1>
-      <p class="lead">Siswa SMKN 5 Malang</p>
+      <p class="fs-4">Siswa SMKN 5 Malang</p>
       <a
         href="https://github.com/Sattriya"
-        target="_blank"
         class="btn btn-dark btn-lg"
         >Follow my GitHub <i class="bi bi-github"></i
       ></a>
@@ -66,7 +65,7 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
             <p>
-              Sekolah Di SMKN 5 Malang, Jurusan PPLG, Udah Itu Aja 😁
+              Sekolah Di SMKN 5 Malang Jurusan PPLG, Skill Bahasa Pemograman Hanya JavaScript, PHP, CSS(Dikit) Yang Sama-Sama Masih Pemula
             </p>
       </div>
     </section>
@@ -87,7 +86,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Bigetron</h5>
-                <p class="card-text">Tim paling Jago 😎</p>
+                <p class="card-text">Tim paling Jago</p>
                 <a href="https://bigetron.gg/" class="btn btn-primary"
                   >Detail Project &raquo;</a
                 >
@@ -95,28 +94,28 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" style="background-color: #fcefee">
+            <div class="card">
               <img
                 src="img/projects/Kod.jpg"
                 class="card-img-top"
                 alt="Project 1"
               />
               <div class="card-body">
-                <h5 class="card-title">Kodular 😅</h5>
+                <h5 class="card-title">Kodular</h5>
                 <p class="card-text">Form Sederhana Menggunakan Kodular</p>
                 <a href="https://github.com/Sattriya/Tugas-Kodular" class="btn btn-secondary">Lihat Detail</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" style="background-color: #f0f8ff">
+            <div class="card">
               <img
                 src="img/projects/crud.jpg"
                 class="card-img-top"
                 alt="Project 1"
               />
               <div class="card-body">
-                <h5 class="card-title">CRUD PHP 😗</h5>
+                <h5 class="card-title">CRUD PHP & MySql</h5>
                 <p class="card-text">CRUD PHP Untuk Mengelola Mahasiswa</p>
                 <a
                   href="https://github.com/Sattriya/crud-php"
@@ -142,12 +141,11 @@
               class="alert alert-success alert-dismissible fade show d-none my-alert"
               role="alert"
             >
-              <strong>Terimakasih😁!</strong>
+              <strong>Berhasil Terkirim ✅</strong>
               <button
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="alert"
-                aria-label="Close"
               ></button>
             </div>
             <form name="contact-form">
@@ -168,7 +166,7 @@
                   class="form-control"
                   id="email"
                   name="email"
-                  placeholder="Masukkan email aktif"
+                  placeholder="Masukkan email"
                 />
               </div>
               <div class="mb-3">
@@ -178,7 +176,7 @@
                   id="pesan"
                   rows="3"
                   name="pesan"
-                  placeholder="Tulis pesan di sini..."
+                  placeholder="Tulis pesan di sini"
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">
@@ -190,7 +188,7 @@
                 disabled
               >
                 <span class="spinner-border spinner-border-sm"></span>
-                Loading...
+                Tunggu..
               </button>
             </form>
           </div>
@@ -198,15 +196,7 @@
       </div>
     </section>
     <footer class="text-white text-center bg-crimson">
-      <p class="mb-1">
-        Created by
-        <a
-          href="https://github.com/Sattriya"
-          class="text-white text-decoration-none"
-          >Satriya</a
-        >
-        😁
-      </p>
+      <p class="mb-1">Created by <strong>Satriya</strong></p>
       <div class="social-icons">
         <a href="https://www.youtube.com/@imnoobie-g4g"><i class="bi bi-youtube"></i></a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"><i class="bi bi-instagram"></i></a>
@@ -214,26 +204,33 @@
       </div>
     </footer>
     <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycby3KsWkHBygYH_9UX3C3KrQ4fN7nnn2yKEYAkS_ggeAtRKZmg8vTBSeGctXnKrT8k2R/exec";
-      const form = document.forms["contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            myAlert.classList.toggle("d-none");
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycby3KsWkHBygYH_9UX3C3KrQ4fN7nnn2yKEYAkS_ggeAtRKZmg8vTBSeGctXnKrT8k2R/exec";
+  const form = document.forms["contact-form"];
+  const btnKirim = document.querySelector(".btn-kirim");
+  const btnLoading = document.querySelector(".btn-loading");
+  const myAlert = document.querySelector(".my-alert");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    btnLoading.classList.toggle("d-none");
+    btnKirim.classList.toggle("d-none");
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then((response) => {
+      btnLoading.classList.toggle("d-none");
+      btnKirim.classList.toggle("d-none");
+      myAlert.classList.toggle("d-none");
+      form.reset();
+    })
+    .catch((error) => {
+      console.log("Error!", error.message);
+    });
+  });
+</script>
+
   </body>
 </html>
